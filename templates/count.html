@@ -1,0 +1,14 @@
+<h1>Counted</h1>
+
+<a href="{%url 'home'%}"> Back to Home</a>
+
+<h2>Your text is</h2>
+{{fulltext}}
+<br>
+<h2>Wordcount</h2>
+The total number of words is {{words}}
+<br>
+{%for word,value in worddictionary%}
+  {{word}} appears {{value}} times
+  <br>
+{%endfor%}
